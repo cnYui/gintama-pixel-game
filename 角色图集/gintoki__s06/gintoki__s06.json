@@ -1,0 +1,63 @@
+{
+  "id": "gintoki__s06",
+  "name": "银时（s06 坐着打小钢珠 / 跪拜 Jump）",
+  "work": "银魂",
+  "image": "gintoki__s06.png",
+  "cell": [
+    31,
+    34
+  ],
+  "pivot": [
+    15,
+    31
+  ],
+  "facing": "right",
+  "animations": {
+    "cheer_sit": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "frozen_sit": {
+      "row": 1,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    },
+    "shock_sit": {
+      "row": 2,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "blank_sit": {
+      "row": 3,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    },
+    "kneel_reach": {
+      "row": 4,
+      "frames": 4,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "kneel_stars": {
+      "row": 5,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "gintoki",
+    "说明": "原片场景里的特殊动作；头像看 gintoki 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

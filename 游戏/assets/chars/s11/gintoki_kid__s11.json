@@ -1,0 +1,89 @@
+{
+ "id": "gintoki_kid__s11",
+ "base": "gintoki_kid",
+ "name": "gintoki_kid__s11",
+ "image": "gintoki_kid__s11.png",
+ "cell": [
+  44,
+  46
+ ],
+ "pivot": [
+  18,
+  33
+ ],
+ "facing": "right",
+ "animations": {
+  "eat_shock": {
+   "row": 0,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "jump_sword": {
+   "row": 1,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "ready_angry": {
+   "row": 2,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "lower_blade": {
+   "row": 3,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "walk_sad": {
+   "row": 4,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "reach": {
+   "row": 5,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "shoulder_bokuto": {
+   "row": 6,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "attack_bokuto": {
+   "row": 7,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "sit_sleep": {
+   "row": 8,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "sit_crushed": {
+   "row": 9,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "lie_ko": {
+   "row": 10,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "kneel_reach": {
+   "row": 11,
+   "frames": 11,
+   "fps": 12,
+   "kind": "loop"
+  }
+ }
+}

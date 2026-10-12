@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>银魂 像素剧场 · 游戏版</title>
+<!-- 手机 / 平板：不许缩放、铺到刘海下面（按钮自己躲开安全区）；iPhone 点“添加到主屏幕”后能全屏 -->
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="银魂像素剧场">
+<meta name="theme-color" content="#000000">
+<meta name="format-detection" content="telephone=no">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%;
+               touch-action: none; overscroll-behavior: none; -webkit-tap-highlight-color: transparent;
+               -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #screen { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+            image-rendering: pixelated; image-rendering: crisp-edges; }
+  #loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+             color: #bbb; font: 14px "Microsoft YaHei", sans-serif; letter-spacing: 1px; }
+
+  /* ================================================================ 触屏操作（手机 / 平板横屏）
+     engine/touch.js 负责接线；这里只管长相和位置。--b = 按钮基准直径，随屏幕高度自动算（touch.js 写进来）。
+     左下：方向盘（按住滑动，8 个方向）　右下：J 攻击 / K 跳跃 / L 防御（按住）/ E 调查·确认　右上：暂停、全屏
+     没有触屏的电脑上整块不显示；网址后面加 ?touch=1 可以在电脑上强制显示，?touch=0 强制不显示。 */
+  #tc { --b: 56px; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 20; display: none; pointer-events: none;
+        font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; color: #fff4d6; }
+  body.tc-on #tc { display: block; }
+  .tc-part { position: absolute; pointer-events: auto; touch-action: none; opacity: .62;
+             transition: opacity .15s, transform .06s; -webkit-tap-highlight-color: transparent; }
+  .tc-part.tc-dim { opacity: .26; }
+  .tc-part.on { opacity: 1; }                         /* 按着的时候不管暗不暗都亮起来 */
+  .tc-part.tc-off { opacity: 0; pointer-events: none; }
+  body.tc-idle .tc-part:not(.on):not(.tc-dim):not(.tc-off):not(.pulse) { opacity: .34; }          /* 手离开屏幕 2.5 秒：按键淡下去，少挡画面（一碰就回来） */
+
+  /* 方向盘 */
+  #tc-pad { left: calc(env(safe-area-inset-left, 0px) + var(--b) * .5); bottom: calc(env(safe-area-inset-bottom, 0px) + var(--b) * .42);
+            width: calc(var(--b) * 2.5); height: calc(var(--b) * 2.5); border-radius: 50%; }
+  #tc-pad svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+  #tc-pad .ring { fill: rgba(16, 14, 32, .26); stroke: rgba(255, 211, 74, .85); stroke-width: 3; }   /* 底色浅一点：盘后面的角色还看得见 */
+  #tc-pad .core { fill: none; stroke: rgba(255, 211, 74, .25); stroke-width: 2; }
+  #tc-pad .arr { fill: rgba(255, 244, 214, .7); stroke: rgba(16, 14, 32, .55); stroke-width: 3; paint-order: stroke; transition: fill .06s; }
+  #tc-pad .arr.on { fill: #ffd34a; }
+  #tc-knob { position: absolute; left: 50%; top: 50%; width: 36%; height: 36%; margin: -18% 0 0 -18%; border-radius: 50%;
+             background: rgba(255, 211, 74, .16); border: 2px solid rgba(255, 211, 74, .85); pointer-events: none; }
+  #tc-pad.on #tc-knob { background: rgba(255, 211, 74, .5); }
+
+  /* 按钮组：菱形，J 在最右（连点最顺手）。--x / --y = 圆心离组中心多少个 --b，--s = 直径是 --b 的几倍 */
+  #tc-btns { position: absolute; right: calc(env(safe-area-inset-right, 0px) + var(--b) * .35); bottom: calc(env(safe-area-inset-bottom, 0px) + var(--b) * .3);
+             width: calc(var(--b) * 3); height: calc(var(--b) * 2.8); pointer-events: none; }
+  .tc-btn { --d: calc(var(--b) * var(--s)); width: var(--d); height: var(--d);
+            left: calc(50% + var(--b) * var(--x) - var(--d) / 2); top: calc(50% + var(--b) * var(--y) - var(--d) / 2);
+            box-sizing: border-box; border-radius: 50%; border: 2px solid var(--c); background: rgba(16, 14, 32, .42);
+            display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; text-align: center; }
+  .tc-btn::after { content: ""; position: absolute; top: -4px; left: -4px; right: -4px; bottom: -4px; border-radius: 50%; }          /* 比看到的大一圈，手指偏一点也按得到 */
+  .tc-btn b { font: 800 calc(var(--d) * .4) / 1 "Arial Black", Impact, "Segoe UI", system-ui, sans-serif; color: var(--c); text-shadow: 0 0 3px rgba(0, 0, 0, .85); }
+  .tc-btn i { font-style: normal; font-weight: 700; font-size: max(10px, calc(var(--d) * .19)); margin-top: calc(var(--d) * .04); opacity: .95; text-shadow: 0 0 3px rgba(0, 0, 0, .85); }
+  .tc-btn.on { background: var(--c); transform: scale(.93); }
+  .tc-btn.on b, .tc-btn.on i { color: #1a1020; }
+  .tc-j { --s: 1.2; --x: .92; --y: .02; --c: #ff7a6a; }
+  .tc-k { --s: 1;   --x: 0;   --y: -.9; --c: #6ab8ff; }
+  .tc-l { --s: 1;   --x: -.95; --y: .02; --c: #7ad88a; }
+  .tc-e { --s: .92; --x: 0;   --y: .9;  --c: #ffd34a; }
+  .tc-e.pulse { animation: tc-pulse .9s ease-in-out infinite; }                                 /* 附近有人 / 东西可以调查时提醒一下 */
+  @keyframes tc-pulse { 50% { transform: scale(1.12); box-shadow: 0 0 0 calc(var(--b) * .1) rgba(255, 211, 74, .35); } }
+
+  /* 右上角：暂停、全屏 */
+  .tc-sys { top: calc(env(safe-area-inset-top, 0px) + var(--b) * .2); width: calc(var(--b) * .72); height: calc(var(--b) * .72);
+            box-sizing: border-box; border-radius: 50%; border: 2px solid rgba(255, 211, 74, .8); background: rgba(16, 14, 32, .42);
+            display: flex; align-items: center; justify-content: center; }
+  .tc-sys::after { content: ""; position: absolute; top: -6px; left: -6px; right: -6px; bottom: -6px; border-radius: 50%; }
+  .tc-sys svg { width: 52%; height: 52%; fill: none; stroke: #fff4d6; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; }
+  .tc-sys.on { background: rgba(255, 211, 74, .6); }
+  #tc-pause { right: calc(env(safe-area-inset-right, 0px) + var(--b) * .35); }
+  #tc-full  { right: calc(env(safe-area-inset-right, 0px) + var(--b) * 1.25); }
+
+  /* 竖着拿：请横过来 */
+  #tc-rotate { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 40; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
+               background: #0b0a12; color: #ffe9a8; font: 600 18px "Microsoft YaHei", "PingFang SC", sans-serif; letter-spacing: 2px; text-align: center; }
+  body.tc-on.tc-portrait #tc-rotate { display: flex; }
+  #tc-rotate i { display: block; width: 52px; height: 92px; box-sizing: border-box; border: 4px solid #ffd34a; border-radius: 11px;
+                 animation: tc-rot 2.6s ease-in-out infinite; }
+  #tc-rotate small { display: block; margin-top: 8px; font: 400 13px/1.5 "Microsoft YaHei", sans-serif; letter-spacing: 1px; color: #9a93a8; }
+  @keyframes tc-rot { 0%, 15% { transform: rotate(0); } 55%, 85% { transform: rotate(-90deg); } 100% { transform: rotate(0); } }
+
+  /* 一次性提示 */
+  #tc-toast { position: fixed; left: 50%; top: 4%; z-index: 30; max-width: 46%; transform: translateX(-50%); padding: 7px 14px; border-radius: 8px;
+              background: rgba(14, 12, 26, .9); border: 1px solid #ffd34a; color: #fff4d6; text-align: center;
+              font: 13px/1.5 "Microsoft YaHei", "PingFang SC", sans-serif; opacity: 0; transition: opacity .3s; pointer-events: none; }
+  #tc-toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<canvas id="screen" width="384" height="216"></canvas>
+<div id="loading">载入中……</div>
+
+<!-- 触屏操作：按键的名字（J K L E）和游戏里提示文字里的一样，所以“按 J 停下转轮”“按住 L 防御”在手机上照样对得上 -->
+<div id="tc" aria-hidden="true">
+  <div id="tc-pad" class="tc-part">
+    <svg viewBox="0 0 200 200">
+      <circle class="ring" cx="100" cy="100" r="96"/>
+      <circle class="core" cx="100" cy="100" r="32"/>
+      <polygon class="arr" data-d="up"    points="100,20 121,54 79,54"/>
+      <polygon class="arr" data-d="down"  points="100,180 121,146 79,146"/>
+      <polygon class="arr" data-d="left"  points="20,100 54,79 54,121"/>
+      <polygon class="arr" data-d="right" points="180,100 146,79 146,121"/>
+    </svg>
+    <i id="tc-knob"></i>
+  </div>
+  <div id="tc-btns">
+    <div class="tc-part tc-btn tc-l" data-key="guard"><b>L</b><i>防御</i></div>
+    <div class="tc-part tc-btn tc-k" data-key="jump"><b>K</b><i>跳跃</i></div>
+    <div class="tc-part tc-btn tc-e" data-key="ok"><b>E</b><i>调查</i></div>
+    <div class="tc-part tc-btn tc-j" data-key="attack"><b>J</b><i>攻击</i></div>
+  </div>
+  <div id="tc-full" class="tc-part tc-sys">
+    <svg viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg>
+  </div>
+  <div id="tc-pause" class="tc-part tc-sys" data-key="pause">
+    <svg viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></svg>
+  </div>
+</div>
+<div id="tc-rotate"><i></i><div>请把手机横过来玩<small>横屏才看得全画面和按键</small></div></div>
+<div id="tc-toast"></div>
+
+<script src="data.js"></script>
+<script src="engine/core.js"></script>
+<script src="engine/gfx.js"></script>
+<script src="engine/world.js"></script>
+<script src="engine/ui.js"></script>
+<script src="engine/script.js"></script>
+<script src="engine/touch.js"></script>
+<script src="story/stages.js"></script>
+<script src="story/prologue.js"></script>
+<script src="story/chapter1.js"></script>
+<script src="story/chapter2.js"></script>
+<script src="story/chapter3.js"></script>
+<script src="story/chapter4.js"></script>
+<script src="story/chapter5.js"></script>
+<script src="story/chapter6.js"></script>
+<script src="story/chapter7.js"></script>
+<script src="story/chapter8.js"></script>
+<script src="story/chapter9.js"></script>
+<script src="story/chapter10.js"></script>
+<script src="story/chapter11.js"></script>
+<script src="story/chapter12.js"></script>
+<script src="story/chapter13.js"></script>
+<script src="story/chapter14.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

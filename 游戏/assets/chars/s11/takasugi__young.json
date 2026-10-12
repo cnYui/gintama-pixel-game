@@ -1,0 +1,35 @@
+{
+ "id": "takasugi__young",
+ "base": "takasugi",
+ "name": "takasugi__young",
+ "image": "takasugi__young.png",
+ "cell": [
+  27,
+  36
+ ],
+ "pivot": [
+  16,
+  33
+ ],
+ "facing": "right",
+ "animations": {
+  "idle": {
+   "row": 0,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "kneel_bound_angry": {
+   "row": 1,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "kneel_bound_shout": {
+   "row": 2,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}

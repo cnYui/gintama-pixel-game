@@ -1,0 +1,23 @@
+{
+ "id": "sakamoto__s11",
+ "base": "sakamoto",
+ "name": "sakamoto__s11",
+ "image": "sakamoto__s11.png",
+ "cell": [
+  26,
+  37
+ ],
+ "pivot": [
+  16,
+  34
+ ],
+ "facing": "right",
+ "animations": {
+  "laugh_noha": {
+   "row": 0,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  }
+ }
+}

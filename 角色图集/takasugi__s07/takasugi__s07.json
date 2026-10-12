@@ -1,0 +1,45 @@
+{
+  "id": "takasugi__s07",
+  "name": "高杉（s07 坐在船舷上抽烟）",
+  "work": "银魂",
+  "image": "takasugi__s07.png",
+  "cell": [
+    33,
+    43
+  ],
+  "pivot": [
+    16,
+    40
+  ],
+  "facing": "right",
+  "animations": {
+    "sit_rail_norail": {
+      "row": 0,
+      "frames": 24,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "sit_rail_norail_smug": {
+      "row": 1,
+      "frames": 24,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "smoke_smug": {
+      "row": 2,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "takasugi",
+    "说明": "原片场景里的特殊动作；头像看 takasugi 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

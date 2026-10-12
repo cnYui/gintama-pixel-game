@@ -1,0 +1,33 @@
+{
+  "id": "naraku__s10",
+  "name": "奈落（s10 山脊上的剪影）",
+  "work": "银魂",
+  "image": "naraku__s10.png",
+  "cell": [
+    27,
+    35
+  ],
+  "pivot": [
+    14,
+    32
+  ],
+  "facing": "right",
+  "animations": {
+    "ridge": {
+      "row": 0,
+      "frames": 16,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "naraku",
+    "说明": "原片场景里的特殊动作；头像看 naraku 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

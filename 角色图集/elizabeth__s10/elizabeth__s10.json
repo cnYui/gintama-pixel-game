@@ -1,0 +1,39 @@
+{
+  "id": "elizabeth__s10",
+  "name": "伊丽莎白（s10「天诛」）",
+  "work": "银魂",
+  "image": "elizabeth__s10.png",
+  "cell": [
+    68,
+    63
+  ],
+  "pivot": [
+    26,
+    52
+  ],
+  "facing": "right",
+  "animations": {
+    "sign_tenchu": {
+      "row": 0,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "club_tenchu": {
+      "row": 1,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "elizabeth",
+    "说明": "原片场景里的特殊动作；头像看 elizabeth 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

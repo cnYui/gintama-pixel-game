@@ -1,0 +1,75 @@
+{
+  "id": "gintoki__s05",
+  "name": "银时（s05 黑灰爆炸头 + 接炸弹）",
+  "work": "银魂",
+  "image": "gintoki__s05.png",
+  "cell": [
+    34,
+    44
+  ],
+  "pivot": [
+    17,
+    41
+  ],
+  "facing": "right",
+  "animations": {
+    "soot_daze": {
+      "row": 0,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "soot_cough": {
+      "row": 1,
+      "frames": 4,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "soot_shout": {
+      "row": 2,
+      "frames": 9,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "soot_wail": {
+      "row": 3,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "catch": {
+      "row": 4,
+      "frames": 4,
+      "fps": 20,
+      "kind": "oneshot"
+    },
+    "hold_bomb": {
+      "row": 5,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    },
+    "hold_bomb_shock": {
+      "row": 6,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    },
+    "throw_up": {
+      "row": 7,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "gintoki",
+    "说明": "原片场景里的特殊动作；头像看 gintoki 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

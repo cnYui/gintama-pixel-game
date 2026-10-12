@@ -1,0 +1,263 @@
+{
+  "id": "katsura",
+  "name": "桂",
+  "work": "银魂",
+  "image": "katsura.png",
+  "cell": [
+    57,
+    50
+  ],
+  "pivot": [
+    23,
+    40
+  ],
+  "facing": "right",
+  "animations": {
+    "idle": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "walk": {
+      "row": 1,
+      "frames": 15,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 3.6
+    },
+    "run": {
+      "row": 2,
+      "frames": 23,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 33.2
+    },
+    "run_away": {
+      "row": 3,
+      "frames": 23,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 63.4
+    },
+    "talk": {
+      "row": 4,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 14.4
+    },
+    "shout": {
+      "row": 5,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 14.4
+    },
+    "point": {
+      "row": 6,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "shock": {
+      "row": 7,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "hit": {
+      "row": 8,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "fly": {
+      "row": 9,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "lie": {
+      "row": 10,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "sleep": {
+      "row": 11,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "attack": {
+      "row": 12,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "slash_up": {
+      "row": 13,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "thrust": {
+      "row": 14,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "ready": {
+      "row": 15,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "guard": {
+      "row": 16,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "shoulder": {
+      "row": 17,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "jump": {
+      "row": 18,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "land": {
+      "row": 19,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "sit": {
+      "row": 20,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "kneel": {
+      "row": 21,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "cheer": {
+      "row": 22,
+      "frames": 3,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "bow": {
+      "row": 23,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "cry": {
+      "row": 24,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "eat": {
+      "row": 25,
+      "frames": 4,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "think": {
+      "row": 26,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "arms_crossed": {
+      "row": 27,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "wave": {
+      "row": 28,
+      "frames": 4,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "punch": {
+      "row": 29,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "kick": {
+      "row": 30,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "bomb": {
+      "row": 31,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 3.3
+    },
+    "bomb_throw": {
+      "row": 32,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    }
+  },
+  "aliases": {},
+  "expressions": [
+    "normal",
+    "blink",
+    "talk",
+    "angry",
+    "determined",
+    "shout",
+    "shock",
+    "happy",
+    "sad",
+    "cry",
+    "hurt",
+    "smug",
+    "sleep",
+    "gloom",
+    "portrait_default"
+  ],
+  "variants": {},
+  "source": {
+    "project": "gintama_pixel",
+    "call": "chars.render_sprite(cid, pose, t=T0+k/12, p=None 或 k/7)；脚点 = 渲染函数返回的 (ax, ay)",
+    "rig": "chars/rig.py（人形骨架）"
+  },
+  "notes": "朝右；向左用水平镜像。原工程画布 384×216，放大 5 倍到 1080p，所以游戏里整数倍放大（最近邻）最还原。"
+}

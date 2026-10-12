@@ -1,0 +1,128 @@
+{
+ "id": "s14_extra",
+ "name": "s14 extra rows",
+ "work": "银魂",
+ "image": "s14_extra.png",
+ "cell": [
+  59,
+  57
+ ],
+ "pivot": [
+  18,
+  52
+ ],
+ "facing": "right",
+ "animations": {
+  "gintoki_walk_jump": {
+   "row": 0,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "gintoki_lie_wave": {
+   "row": 1,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "gintoki_barrel_twitch": {
+   "row": 2,
+   "frames": 2,
+   "fps": 8,
+   "kind": "loop"
+  },
+  "gintoki_chomped": {
+   "row": 3,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "gintoki_kick_tilt": {
+   "row": 4,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "gintoki_point_sky": {
+   "row": 5,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "kagura_umbrella_sad": {
+   "row": 6,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "kagura_idle_cry": {
+   "row": 7,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "kagura_crouch": {
+   "row": 8,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "shinpachi_idle_sad": {
+   "row": 9,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "shinpachi_run_shock": {
+   "row": 10,
+   "frames": 23,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 24.2
+  },
+  "hijikata_idle_afro": {
+   "row": 11,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 29.5
+  },
+  "hijikata_shock_afro": {
+   "row": 12,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "kondo_walk_love": {
+   "row": 13,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 0.2
+  },
+  "otae_idle_dark": {
+   "row": 14,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 24.3
+  },
+  "elizabeth_sign_没错": {
+   "row": 15,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  }
+ },
+ "aliases": {},
+ "expressions": [],
+ "variants": {}
+}

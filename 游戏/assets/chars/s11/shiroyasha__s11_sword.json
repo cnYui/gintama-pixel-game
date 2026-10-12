@@ -1,0 +1,35 @@
+{
+ "id": "shiroyasha__s11_sword",
+ "base": "shiroyasha",
+ "name": "shiroyasha__s11_sword",
+ "image": "shiroyasha__s11_sword.png",
+ "cell": [
+  52,
+  73
+ ],
+ "pivot": [
+  19,
+  70
+ ],
+ "facing": "right",
+ "animations": {
+  "raise": {
+   "row": 0,
+   "frames": 6,
+   "fps": 15,
+   "kind": "oneshot"
+  },
+  "glint": {
+   "row": 1,
+   "frames": 3,
+   "fps": 20,
+   "kind": "oneshot"
+  },
+  "fall": {
+   "row": 2,
+   "frames": 4,
+   "fps": 30,
+   "kind": "oneshot"
+  }
+ }
+}

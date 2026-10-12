@@ -1,0 +1,33 @@
+{
+  "id": "kagura__s06",
+  "name": "神乐（s06 坐着嚼醋昆布）",
+  "work": "银魂",
+  "image": "kagura__s06.png",
+  "cell": [
+    26,
+    28
+  ],
+  "pivot": [
+    13,
+    25
+  ],
+  "facing": "right",
+  "animations": {
+    "sukonbu_sit": {
+      "row": 0,
+      "frames": 6,
+      "fps": 6,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "kagura",
+    "说明": "原片场景里的特殊动作；头像看 kagura 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "hijikata__s04",
+  "name": "土方（s04 坐着抽烟 / 爆炸头）",
+  "work": "银魂",
+  "image": "hijikata__s04.png",
+  "cell": [
+    58,
+    51
+  ],
+  "pivot": [
+    22,
+    48
+  ],
+  "facing": "right",
+  "animations": {
+    "smoke_sit": {
+      "row": 0,
+      "frames": 29,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "sit_afro": {
+      "row": 1,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "jump_afro": {
+      "row": 2,
+      "frames": 13,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "point_afro": {
+      "row": 3,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "idle_afro": {
+      "row": 4,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "draw_afro": {
+      "row": 5,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "walk_afro": {
+      "row": 6,
+      "frames": 15,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "attack_afro": {
+      "row": 7,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "hit_afro": {
+      "row": 8,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "hijikata",
+    "说明": "原片场景里的特殊动作；头像看 hijikata 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

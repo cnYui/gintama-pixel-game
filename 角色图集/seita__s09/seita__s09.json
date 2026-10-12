@@ -1,0 +1,39 @@
+{
+  "id": "seita__s09",
+  "name": "晴太（s09 难过 / 吊在拉杆上）",
+  "work": "银魂",
+  "image": "seita__s09.png",
+  "cell": [
+    18,
+    28
+  ],
+  "pivot": [
+    9,
+    25
+  ],
+  "facing": "right",
+  "animations": {
+    "idle_sad": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "dangle": {
+      "row": 1,
+      "frames": 2,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "seita",
+    "说明": "原片场景里的特殊动作；头像看 seita 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

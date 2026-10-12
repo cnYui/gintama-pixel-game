@@ -1,0 +1,65 @@
+{
+ "id": "takasugi_kid__s11",
+ "base": "takasugi_kid",
+ "name": "takasugi_kid__s11",
+ "image": "takasugi_kid__s11.png",
+ "cell": [
+  35,
+  33
+ ],
+ "pivot": [
+  13,
+  30
+ ],
+ "facing": "right",
+ "animations": {
+  "ready_shout": {
+   "row": 0,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "run_bokuto_up": {
+   "row": 1,
+   "frames": 23,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "jump_bokuto_up": {
+   "row": 2,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "hit_frozen": {
+   "row": 3,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "sit_angry": {
+   "row": 4,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "sit_shock": {
+   "row": 5,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "sit_laugh": {
+   "row": 6,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "kneel_angry": {
+   "row": 7,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}

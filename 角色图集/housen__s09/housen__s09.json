@@ -1,0 +1,45 @@
+{
+  "id": "housen__s09",
+  "name": "凤仙（s09 说话 / 被太阳灼伤）",
+  "work": "银魂",
+  "image": "housen__s09.png",
+  "cell": [
+    39,
+    52
+  ],
+  "pivot": [
+    22,
+    49
+  ],
+  "facing": "right",
+  "animations": {
+    "idle_talk": {
+      "row": 0,
+      "frames": 16,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "idle_smug": {
+      "row": 1,
+      "frames": 16,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shock_hurt": {
+      "row": 2,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "housen",
+    "说明": "原片场景里的特殊动作；头像看 housen 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

@@ -1,0 +1,35 @@
+{
+ "id": "shiroyasha__s11",
+ "base": "shiroyasha",
+ "name": "shiroyasha__s11",
+ "image": "shiroyasha__s11.png",
+ "cell": [
+  44,
+  36
+ ],
+ "pivot": [
+  19,
+  33
+ ],
+ "facing": "right",
+ "animations": {
+  "battle_idle_angry": {
+   "row": 0,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "battle_idle_sad": {
+   "row": 1,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "battle_idle_shock": {
+   "row": 2,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  }
+ }
+}

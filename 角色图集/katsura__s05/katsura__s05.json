@@ -1,0 +1,51 @@
+{
+  "id": "katsura__s05",
+  "name": "桂（s05 特殊动作）",
+  "work": "银魂",
+  "image": "katsura__s05.png",
+  "cell": [
+    32,
+    36
+  ],
+  "pivot": [
+    19,
+    33
+  ],
+  "facing": "right",
+  "animations": {
+    "skid": {
+      "row": 0,
+      "frames": 1,
+      "fps": 1,
+      "kind": "static"
+    },
+    "smug_arm": {
+      "row": 1,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    },
+    "angry_turn": {
+      "row": 2,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    },
+    "idle_shock": {
+      "row": 3,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "katsura",
+    "说明": "原片场景里的特殊动作；头像看 katsura 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

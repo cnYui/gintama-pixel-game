@@ -1,0 +1,39 @@
+{
+  "id": "okita__s05",
+  "name": "冲田（s05 扛着火箭筒跑 / 抖S脸瞄准）",
+  "work": "银魂",
+  "image": "okita__s05.png",
+  "cell": [
+    40,
+    37
+  ],
+  "pivot": [
+    15,
+    34
+  ],
+  "facing": "right",
+  "animations": {
+    "run_bazooka": {
+      "row": 0,
+      "frames": 23,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "bazooka_sadist": {
+      "row": 1,
+      "frames": 4,
+      "fps": 4,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "okita",
+    "说明": "原片场景里的特殊动作；头像看 okita 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

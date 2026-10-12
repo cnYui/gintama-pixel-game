@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>银魂 像素剧场 · 游戏版</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  #screen { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+            image-rendering: pixelated; image-rendering: crisp-edges; }
+  #loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+             color: #bbb; font: 14px "Microsoft YaHei", sans-serif; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<canvas id="screen" width="384" height="216"></canvas>
+<div id="loading">载入中……</div>
+<script src="data.js"></script>
+<script src="engine/core.js"></script>
+<script src="engine/gfx.js"></script>
+<script src="engine/world.js"></script>
+<script src="engine/ui.js"></script>
+<script src="engine/script.js"></script>
+<script src="story/stages.js"></script>
+<script src="story/prologue.js"></script>
+<script src="story/chapter1.js"></script>
+<script src="story/chapter2.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

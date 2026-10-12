@@ -1,0 +1,33 @@
+{
+  "id": "tsukuyo__s09",
+  "name": "月咏（s09 推拉杆）",
+  "work": "银魂",
+  "image": "tsukuyo__s09.png",
+  "cell": [
+    31,
+    36
+  ],
+  "pivot": [
+    15,
+    33
+  ],
+  "facing": "right",
+  "animations": {
+    "shove": {
+      "row": 0,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "tsukuyo",
+    "说明": "原片场景里的特殊动作；头像看 tsukuyo 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

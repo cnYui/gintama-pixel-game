@@ -1,0 +1,176 @@
+{
+  "id": "sadaharu",
+  "name": "定春",
+  "work": "银魂",
+  "image": "sadaharu.png",
+  "cell": [
+    75,
+    78
+  ],
+  "pivot": [
+    36,
+    59
+  ],
+  "facing": "right",
+  "animations": {
+    "bite": {
+      "row": 0,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "bite_loop": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "bark": {
+      "row": 2,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "idle": {
+      "row": 3,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "walk": {
+      "row": 4,
+      "frames": 17,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 88.6
+    },
+    "run": {
+      "row": 5,
+      "frames": 10,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": "approx",
+      "loop_error_px": 71.0
+    },
+    "talk": {
+      "row": 6,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "shock": {
+      "row": 7,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "shock_loop": {
+      "row": 8,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "hit": {
+      "row": 9,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "hit_loop": {
+      "row": 10,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "fly": {
+      "row": 11,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "lie": {
+      "row": 12,
+      "frames": 24,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "jump": {
+      "row": 13,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "land": {
+      "row": 14,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "cheer": {
+      "row": 15,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "cry": {
+      "row": 16,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    },
+    "eat_loop": {
+      "row": 17,
+      "frames": 3,
+      "fps": 12,
+      "kind": "loop",
+      "seamless": true
+    }
+  },
+  "aliases": {
+    "run_away": "run",
+    "shout": "bark",
+    "point": "bark",
+    "sleep": "lie",
+    "attack": "bite",
+    "attack_loop": "bite_loop",
+    "slash_up": "bite",
+    "slash_up_loop": "bite_loop",
+    "thrust": "bite",
+    "thrust_loop": "bite_loop",
+    "ready": "bark",
+    "guard": "idle",
+    "shoulder": "idle",
+    "sit": "land",
+    "kneel": "land",
+    "bow": "land",
+    "eat": "bite",
+    "think": "land",
+    "arms_crossed": "land",
+    "wave": "cheer",
+    "punch": "bite",
+    "punch_loop": "bite_loop",
+    "kick": "bite",
+    "kick_loop": "bite_loop"
+  },
+  "expressions": [
+    "portrait_default"
+  ],
+  "variants": {},
+  "source": {
+    "project": "gintama_pixel",
+    "call": "chars.render_sprite(cid, pose, t=T0+k/12, p=None 或 k/7)；脚点 = 渲染函数返回的 (ax, ay)",
+    "rig": "自定义渲染器（非人形）"
+  },
+  "notes": "朝右；向左用水平镜像。原工程画布 384×216，放大 5 倍到 1080p，所以游戏里整数倍放大（最近邻）最还原。"
+}
