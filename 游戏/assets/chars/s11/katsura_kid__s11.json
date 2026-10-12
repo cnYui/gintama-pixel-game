@@ -1,0 +1,41 @@
+{
+ "id": "katsura_kid__s11",
+ "base": "katsura_kid",
+ "name": "katsura_kid__s11",
+ "image": "katsura_kid__s11.png",
+ "cell": [
+  25,
+  28
+ ],
+ "pivot": [
+  14,
+  25
+ ],
+ "facing": "right",
+ "animations": {
+  "sit_shock": {
+   "row": 0,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "sit_read": {
+   "row": 1,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "sit_laugh": {
+   "row": 2,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "kneel_cry": {
+   "row": 3,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}

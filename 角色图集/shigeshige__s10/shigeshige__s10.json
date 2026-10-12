@@ -1,0 +1,63 @@
+{
+  "id": "shigeshige__s10",
+  "name": "茂茂（s10 发型被剪坏）",
+  "work": "银魂",
+  "image": "shigeshige__s10.png",
+  "cell": [
+    28,
+    35
+  ],
+  "pivot": [
+    14,
+    32
+  ],
+  "facing": "right",
+  "animations": {
+    "sit_blink": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "sit_haircut": {
+      "row": 1,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "sit_haircut_shock": {
+      "row": 2,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "walk_haircut": {
+      "row": 3,
+      "frames": 15,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "idle_haircut": {
+      "row": 4,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shock_haircut": {
+      "row": 5,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "shigeshige",
+    "说明": "原片场景里的特殊动作；头像看 shigeshige 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

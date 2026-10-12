@@ -1,0 +1,23 @@
+{
+ "id": "gintoki__s11",
+ "base": "gintoki",
+ "name": "gintoki__s11",
+ "image": "gintoki__s11.png",
+ "cell": [
+  39,
+  35
+ ],
+ "pivot": [
+  7,
+  32
+ ],
+ "facing": "right",
+ "animations": {
+  "lock_shadow": {
+   "row": 0,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}

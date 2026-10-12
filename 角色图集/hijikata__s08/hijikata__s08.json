@@ -1,0 +1,45 @@
+{
+  "id": "hijikata__s08",
+  "name": "土方（s08 破除诅咒）",
+  "work": "银魂",
+  "image": "hijikata__s08.png",
+  "cell": [
+    50,
+    36
+  ],
+  "pivot": [
+    21,
+    33
+  ],
+  "facing": "right",
+  "animations": {
+    "guard_shock": {
+      "row": 0,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "ready_shout": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shoulder_angry": {
+      "row": 2,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "hijikata",
+    "说明": "原片场景里的特殊动作；头像看 hijikata 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

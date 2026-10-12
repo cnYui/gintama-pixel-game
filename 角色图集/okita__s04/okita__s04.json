@@ -1,0 +1,45 @@
+{
+  "id": "okita__s04",
+  "name": "冲田（s04 午睡 / 醒来 / 抖S瞄准）",
+  "work": "银魂",
+  "image": "okita__s04.png",
+  "cell": [
+    68,
+    41
+  ],
+  "pivot": [
+    28,
+    38
+  ],
+  "facing": "right",
+  "animations": {
+    "nap": {
+      "row": 0,
+      "frames": 40,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "nap_wake": {
+      "row": 1,
+      "frames": 3,
+      "fps": 30,
+      "kind": "oneshot"
+    },
+    "bazooka_aim_sadist": {
+      "row": 2,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "okita",
+    "说明": "原片场景里的特殊动作；头像看 okita 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

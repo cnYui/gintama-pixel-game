@@ -1,0 +1,23 @@
+{
+ "id": "otae__s12",
+ "base": "otae",
+ "name": "otae__s12",
+ "image": "otae__s12.png",
+ "cell": [
+  23,
+  34
+ ],
+ "pivot": [
+  13,
+  31
+ ],
+ "facing": "right",
+ "animations": {
+  "idle_open": {
+   "row": 0,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop"
+  }
+ }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "gintoki__s10",
+  "name": "银时（s10 理发 / 冲刺 / 刀锋相抵）",
+  "work": "银魂",
+  "image": "gintoki__s10.png",
+  "cell": [
+    46,
+    37
+  ],
+  "pivot": [
+    14,
+    34
+  ],
+  "facing": "right",
+  "animations": {
+    "barber_snip": {
+      "row": 0,
+      "frames": 4,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "barber_sleepy": {
+      "row": 1,
+      "frames": 2,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "barber_shock": {
+      "row": 2,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "barber_hold": {
+      "row": 3,
+      "frames": 2,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "barber_slap": {
+      "row": 4,
+      "frames": 2,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "thumbs_smug": {
+      "row": 5,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "dash_blade": {
+      "row": 6,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "bladelock": {
+      "row": 7,
+      "frames": 3,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "gintoki",
+    "说明": "原片场景里的特殊动作；头像看 gintoki 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

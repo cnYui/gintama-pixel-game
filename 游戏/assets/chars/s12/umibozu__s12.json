@@ -1,0 +1,47 @@
+{
+ "id": "umibozu__s12",
+ "base": "umibozu",
+ "name": "umibozu__s12",
+ "image": "umibozu__s12.png",
+ "cell": [
+  49,
+  39
+ ],
+ "pivot": [
+  16,
+  36
+ ],
+ "facing": "right",
+ "animations": {
+  "jump_angry": {
+   "row": 0,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "land_angry": {
+   "row": 1,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "stop_normal": {
+   "row": 2,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "stop_angry": {
+   "row": 3,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "idle_sad": {
+   "row": 4,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "kagura__s03",
+  "name": "神乐（s03 特殊动作）",
+  "work": "银魂",
+  "image": "kagura__s03.png",
+  "cell": [
+    42,
+    31
+  ],
+  "pivot": [
+    13,
+    28
+  ],
+  "facing": "right",
+  "animations": {
+    "aim": {
+      "row": 0,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "blow_smoke": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "poke": {
+      "row": 2,
+      "frames": 2,
+      "fps": 6,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "kagura",
+    "说明": "原片场景里的特殊动作；头像看 kagura 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

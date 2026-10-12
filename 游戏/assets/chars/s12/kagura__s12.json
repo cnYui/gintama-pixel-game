@@ -1,0 +1,89 @@
+{
+ "id": "kagura__s12",
+ "base": "kagura",
+ "name": "kagura__s12",
+ "image": "kagura__s12.png",
+ "cell": [
+  49,
+  34
+ ],
+ "pivot": [
+  15,
+  31
+ ],
+ "facing": "right",
+ "animations": {
+  "ready_angry": {
+   "row": 0,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "land_angry": {
+   "row": 1,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "thrust_shout": {
+   "row": 2,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "attack_bind": {
+   "row": 3,
+   "frames": 3,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "jump_shout": {
+   "row": 4,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "attack_air": {
+   "row": 5,
+   "frames": 3,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "idle_deadpan": {
+   "row": 6,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "idle_determined": {
+   "row": 7,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "point_determined": {
+   "row": 8,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "idle_sad": {
+   "row": 9,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "walk_sad": {
+   "row": 10,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "point_sad": {
+   "row": 11,
+   "frames": 3,
+   "fps": 12,
+   "kind": "oneshot"
+  }
+ }
+}

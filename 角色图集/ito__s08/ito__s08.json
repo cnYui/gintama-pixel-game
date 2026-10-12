@@ -1,0 +1,51 @@
+{
+  "id": "ito__s08",
+  "name": "伊东（s08 冷眼 / 推眼镜 / 跪地微笑）",
+  "work": "银魂",
+  "image": "ito__s08.png",
+  "cell": [
+    28,
+    37
+  ],
+  "pivot": [
+    15,
+    34
+  ],
+  "facing": "right",
+  "animations": {
+    "idle_cold": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "glasses_push": {
+      "row": 1,
+      "frames": 20,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "kneel_smile": {
+      "row": 2,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "kneel_sleep": {
+      "row": 3,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "ito",
+    "说明": "原片场景里的特殊动作；头像看 ito 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

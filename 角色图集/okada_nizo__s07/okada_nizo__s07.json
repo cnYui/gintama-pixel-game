@@ -1,0 +1,99 @@
+{
+  "id": "okada_nizo__s07",
+  "name": "冈田似藏（s07 红樱 / 逆光 / 断刀）",
+  "work": "银魂",
+  "image": "okada_nizo__s07.png",
+  "cell": [
+    54,
+    46
+  ],
+  "pivot": [
+    18,
+    41
+  ],
+  "facing": "right",
+  "animations": {
+    "benizakura_grow": {
+      "row": 0,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "benizakura": {
+      "row": 1,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shadow_walk": {
+      "row": 2,
+      "frames": 15,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shadow_idle": {
+      "row": 3,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shadow_attack95": {
+      "row": 4,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "thrust_evil": {
+      "row": 5,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "attack_evil": {
+      "row": 6,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "ready_evil": {
+      "row": 7,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "guard_evil": {
+      "row": 8,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "attack_end": {
+      "row": 9,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "attack_broken": {
+      "row": 10,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    },
+    "lie_sad": {
+      "row": 11,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "okada_nizo",
+    "说明": "原片场景里的特殊动作；头像看 okada_nizo 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

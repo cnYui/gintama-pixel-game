@@ -1,0 +1,39 @@
+{
+  "id": "sadaharu__bitehead",
+  "name": "定春（咬人时的上颚叠层）",
+  "work": "银魂",
+  "image": "sadaharu__bitehead.png",
+  "cell": [
+    40,
+    49
+  ],
+  "pivot": [
+    1,
+    48
+  ],
+  "facing": "right",
+  "animations": {
+    "bite_head": {
+      "row": 0,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "bite_loop_head": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "sadaharu",
+    "说明": "原片场景里的特殊动作；头像看 sadaharu 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

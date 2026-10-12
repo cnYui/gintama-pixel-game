@@ -1,0 +1,33 @@
+{
+  "id": "kamui__s09",
+  "name": "神威（s09 睁眼）",
+  "work": "银魂",
+  "image": "kamui__s09.png",
+  "cell": [
+    31,
+    33
+  ],
+  "pivot": [
+    17,
+    30
+  ],
+  "facing": "right",
+  "animations": {
+    "sit_open_eyes": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "kamui",
+    "说明": "原片场景里的特殊动作；头像看 kamui 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

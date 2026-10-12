@@ -1,0 +1,51 @@
+{
+  "id": "otae__s04",
+  "name": "阿妙（s04 吃团子 / 杀气）",
+  "work": "银魂",
+  "image": "otae__s04.png",
+  "cell": [
+    28,
+    49
+  ],
+  "pivot": [
+    15,
+    44
+  ],
+  "facing": "right",
+  "animations": {
+    "eat_dango": {
+      "row": 0,
+      "frames": 4,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "idle_open": {
+      "row": 1,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "idle_dark": {
+      "row": 2,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "idle_happy": {
+      "row": 3,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "otae",
+    "说明": "原片场景里的特殊动作；头像看 otae 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

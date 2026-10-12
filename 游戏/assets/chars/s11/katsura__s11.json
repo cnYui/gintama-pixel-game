@@ -1,0 +1,29 @@
+{
+ "id": "katsura__s11",
+ "base": "katsura",
+ "name": "katsura__s11",
+ "image": "katsura__s11.png",
+ "cell": [
+  27,
+  31
+ ],
+ "pivot": [
+  16,
+  28
+ ],
+ "facing": "right",
+ "animations": {
+  "kneel_bound_sad": {
+   "row": 0,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "kneel_bound_shock": {
+   "row": 1,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}

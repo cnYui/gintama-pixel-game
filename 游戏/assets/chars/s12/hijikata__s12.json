@@ -1,0 +1,35 @@
+{
+ "id": "hijikata__s12",
+ "base": "hijikata",
+ "name": "hijikata__s12",
+ "image": "hijikata__s12.png",
+ "cell": [
+  28,
+  36
+ ],
+ "pivot": [
+  15,
+  33
+ ],
+ "facing": "right",
+ "animations": {
+  "light": {
+   "row": 0,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "inhale": {
+   "row": 1,
+   "frames": 4,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "exhale": {
+   "row": 2,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  }
+ }
+}

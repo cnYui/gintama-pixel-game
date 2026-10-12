@@ -1,0 +1,59 @@
+{
+ "id": "kamui__s12",
+ "base": "kamui",
+ "name": "kamui__s12",
+ "image": "kamui__s12.png",
+ "cell": [
+  52,
+  53
+ ],
+ "pivot": [
+  17,
+  50
+ ],
+ "facing": "right",
+ "animations": {
+  "land_smile": {
+   "row": 0,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "thrust_open": {
+   "row": 1,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "guard_smile": {
+   "row": 2,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "ready_open_eyes": {
+   "row": 3,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "idle_smug": {
+   "row": 4,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "idle_smile": {
+   "row": 5,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "walk_umbrella": {
+   "row": 6,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop"
+  }
+ }
+}

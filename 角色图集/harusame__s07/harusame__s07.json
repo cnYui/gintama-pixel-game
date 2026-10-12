@@ -1,0 +1,39 @@
+{
+  "id": "harusame__s07",
+  "name": "春雨海盗（s07 冲锋 / 前景剪影）",
+  "work": "银魂",
+  "image": "harusame__s07.png",
+  "cell": [
+    27,
+    42
+  ],
+  "pivot": [
+    14,
+    39
+  ],
+  "facing": "right",
+  "animations": {
+    "fgsil_idle": {
+      "row": 0,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "charge_angry": {
+      "row": 1,
+      "frames": 23,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "harusame",
+    "说明": "原片场景里的特殊动作；头像看 harusame 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

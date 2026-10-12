@@ -1,0 +1,39 @@
+{
+  "id": "yamazaki__s08",
+  "name": "山崎（s08 啃红豆面包 / 呆住）",
+  "work": "银魂",
+  "image": "yamazaki__s08.png",
+  "cell": [
+    31,
+    36
+  ],
+  "pivot": [
+    15,
+    33
+  ],
+  "facing": "right",
+  "animations": {
+    "anpan": {
+      "row": 0,
+      "frames": 54,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "idle_dead": {
+      "row": 1,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "yamazaki",
+    "说明": "原片场景里的特殊动作；头像看 yamazaki 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

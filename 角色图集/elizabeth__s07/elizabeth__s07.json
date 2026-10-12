@@ -1,0 +1,39 @@
+{
+  "id": "elizabeth__s07",
+  "name": "伊丽莎白（s07「桂先生……」）",
+  "work": "银魂",
+  "image": "elizabeth__s07.png",
+  "cell": [
+    89,
+    54
+  ],
+  "pivot": [
+    12,
+    52
+  ],
+  "facing": "right",
+  "animations": {
+    "sign_katsura": {
+      "row": 0,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "sign_katsura_loop": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "elizabeth",
+    "说明": "原片场景里的特殊动作；头像看 elizabeth 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

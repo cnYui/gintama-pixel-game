@@ -1,0 +1,33 @@
+{
+  "id": "grunt__s08",
+  "name": "叛军（s08 剪影）",
+  "work": "银魂",
+  "image": "grunt__s08.png",
+  "cell": [
+    26,
+    31
+  ],
+  "pivot": [
+    15,
+    28
+  ],
+  "facing": "right",
+  "animations": {
+    "kneel_sil_redeyes": {
+      "row": 0,
+      "frames": 1,
+      "fps": 12,
+      "kind": "static"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "s08_grunt0",
+    "说明": "原片场景里的特殊动作；头像看 s08_grunt0 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

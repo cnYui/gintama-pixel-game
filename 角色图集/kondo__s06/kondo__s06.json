@@ -1,0 +1,39 @@
+{
+  "id": "kondo__s06",
+  "name": "近藤（s06 地板下 / 吓僵）",
+  "work": "银魂",
+  "image": "kondo__s06.png",
+  "cell": [
+    36,
+    40
+  ],
+  "pivot": [
+    17,
+    37
+  ],
+  "facing": "right",
+  "animations": {
+    "stalk_nobush": {
+      "row": 0,
+      "frames": 22,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "frozen": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "kondo",
+    "说明": "原片场景里的特殊动作；头像看 kondo 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

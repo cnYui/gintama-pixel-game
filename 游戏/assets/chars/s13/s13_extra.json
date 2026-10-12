@@ -1,0 +1,182 @@
+{
+ "id": "s13_extra",
+ "name": "s13 extra rows",
+ "work": "银魂",
+ "image": "s13_extra.png",
+ "cell": [
+  71,
+  62
+ ],
+ "pivot": [
+  18,
+  52
+ ],
+ "facing": "right",
+ "animations": {
+  "utsuro_idle_smile": {
+   "row": 0,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "utsuro_thrust_glow": {
+   "row": 1,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "utsuro_attack_glow": {
+   "row": 2,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "utsuro_run_glow": {
+   "row": 3,
+   "frames": 23,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 22.1
+  },
+  "utsuro_ready_glow": {
+   "row": 4,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "gintoki_kneel_cradle": {
+   "row": 5,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "gintoki_kneel_cradle_shock": {
+   "row": 6,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "gintoki_kneel_cradle_bow": {
+   "row": 7,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "gintoki_idle_sword_down_sad": {
+   "row": 8,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "gintoki_idle_sword_down": {
+   "row": 9,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "gintoki_hit_shock": {
+   "row": 10,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "takasugi_guard_brace": {
+   "row": 11,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "takasugi_lie_dead": {
+   "row": 12,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "otae_ready_dark": {
+   "row": 13,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 44.4
+  },
+  "hasegawa_box_cry": {
+   "row": 14,
+   "frames": 16,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "gintoki_kid_idle_bokuto": {
+   "row": 15,
+   "frames": 12,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": true
+  },
+  "gintoki_kid_guard_bokuto": {
+   "row": 16,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "takasugi_kid_run_angry": {
+   "row": 17,
+   "frames": 23,
+   "fps": 12,
+   "kind": "loop",
+   "seamless": "approx",
+   "loop_error_px": 23.3
+  },
+  "takasugi_kid_attack_shout": {
+   "row": 18,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "elizabeth_sign_桂先生": {
+   "row": 19,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "elizabeth_sign_攘夷": {
+   "row": 20,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "elizabeth_sign_天诛": {
+   "row": 21,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "takasugi_cradled_raise": {
+   "row": 22,
+   "frames": 8,
+   "fps": 12,
+   "kind": "oneshot"
+  },
+  "takasugi_cradled_smile": {
+   "row": 23,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "takasugi_cradled_drop": {
+   "row": 24,
+   "frames": 3,
+   "fps": 12,
+   "kind": "oneshot"
+  }
+ },
+ "aliases": {},
+ "expressions": [],
+ "variants": {}
+}

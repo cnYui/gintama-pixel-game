@@ -1,0 +1,71 @@
+{
+ "id": "shouyou__s11",
+ "base": "shouyou",
+ "name": "shouyou__s11",
+ "image": "shouyou__s11.png",
+ "cell": [
+  44,
+  40
+ ],
+ "pivot": [
+  17,
+  33
+ ],
+ "facing": "right",
+ "animations": {
+  "offer": {
+   "row": 0,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "smile_nosword": {
+   "row": 1,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "walk_smile_nosword": {
+   "row": 2,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "headbutt_seq": {
+   "row": 3,
+   "frames": 27,
+   "fps": 30,
+   "kind": "oneshot"
+  },
+  "walk_bound": {
+   "row": 4,
+   "frames": 15,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "idle_bound": {
+   "row": 5,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "idle_bound_smile": {
+   "row": 6,
+   "frames": 4,
+   "fps": 4,
+   "kind": "loop"
+  },
+  "kneel_bound": {
+   "row": 7,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  },
+  "kneel_bound_cry": {
+   "row": 8,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}

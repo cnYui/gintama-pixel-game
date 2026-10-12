@@ -1,0 +1,63 @@
+{
+  "id": "kondo__s04",
+  "name": "近藤（s04 蹲草丛跟踪 / 被打飞）",
+  "work": "银魂",
+  "image": "kondo__s04.png",
+  "cell": [
+    40,
+    42
+  ],
+  "pivot": [
+    20,
+    37
+  ],
+  "facing": "right",
+  "animations": {
+    "stalk": {
+      "row": 0,
+      "frames": 53,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "shock_shock": {
+      "row": 1,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "shock_cry": {
+      "row": 2,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "fly_cry": {
+      "row": 3,
+      "frames": 6,
+      "fps": 12,
+      "kind": "loop"
+    },
+    "land_hurt": {
+      "row": 4,
+      "frames": 8,
+      "fps": 12,
+      "kind": "oneshot"
+    },
+    "shoulder_smug": {
+      "row": 5,
+      "frames": 12,
+      "fps": 12,
+      "kind": "loop"
+    }
+  },
+  "aliases": {},
+  "expressions": [],
+  "variants": {
+    "base": "kondo",
+    "说明": "原片场景里的特殊动作；头像看 kondo 目录"
+  },
+  "source": {
+    "project": "gintama_pixel",
+    "call": "见 烘焙脚本/bake_scene_extras.py"
+  }
+}

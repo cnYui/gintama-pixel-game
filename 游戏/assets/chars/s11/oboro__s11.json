@@ -1,0 +1,29 @@
+{
+ "id": "oboro__s11",
+ "base": "oboro",
+ "name": "oboro__s11",
+ "image": "oboro__s11.png",
+ "cell": [
+  43,
+  37
+ ],
+ "pivot": [
+  10,
+  34
+ ],
+ "facing": "right",
+ "animations": {
+  "ready_low": {
+   "row": 0,
+   "frames": 6,
+   "fps": 12,
+   "kind": "loop"
+  },
+  "lock": {
+   "row": 1,
+   "frames": 1,
+   "fps": 12,
+   "kind": "static"
+  }
+ }
+}
