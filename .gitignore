@@ -1,0 +1,37 @@
+# ---- 版权：不进公开仓库（商业歌曲翻弹 / 原片画面）----
+音频/
+_tmp_audio_test/
+游戏/assets/audio/
+游戏/assets/video/
+游戏/docs/章节素材调研/
+剧情分镜/分镜图/
+*.mp3
+*.mp4
+*.webm
+*.wav
+*.ogg
+*.m4a
+
+# ---- 服务器部署细节（内网地址 / 用户名 / nginx / 隧道配置），只留在本机 ----
+小红书小工具/mac-setup/
+小红书小工具/deploy_mac.sh
+docs/ai/context/20261008-银魂公网部署.md
+
+# ---- 构建产物 / 临时文件 / 平台打包 ----
+游戏/dist-compressed/
+小红书小工具/_tmp/
+小红书小工具/_skill/
+小红书小工具/dist/
+小红书小工具/dist-*/
+小红书小工具/*.zip
+小红书小工具/预览二维码.png
+游戏/tools/_playtest/
+*.zip
+
+# ---- 通用 ----
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
